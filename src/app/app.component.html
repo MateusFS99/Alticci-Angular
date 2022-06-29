@@ -1,10 +1,13 @@
 <div class="container">
+    <h4>Entre com um valor positivo N para os N primeiros números da sequencia</h4>
     <form [formGroup]="form" (submit)="numSubmit()">
-        <div class="form-group">
+        <div>
             <label for="formGroupExampleInput">N: </label>
-            <input type="text" formControlName="n" class="form-control">
+            <input type="number" formControlName="n" class="form-control">
             <button>Enviar</button>
         </div>
     </form>
-    <p *ngFor="let n of alticci">{{n}}</p>
+    <div>
+        <span *ngFor="let n of alticci">{{n}}</span>
+    </div>
 </div>
