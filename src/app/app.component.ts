@@ -10,7 +10,7 @@ import { AppService } from './app.service';
 export class AppComponent implements OnInit {
 
     public title = 'Alticci-Angular';
-    public aobaForm: FormGroup;
+    public form: FormGroup;
     public alticci: number[];
 
     constructor(private fb: FormBuilder, private appService: AppService) {
@@ -20,12 +20,12 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
 
-        this.loadAlticci(5);
+        this.loadAlticci(0);
     }
 
     criarForm() {
 
-        this.aobaForm = this.fb.group({ n: 0 });
+        this.form = this.fb.group({ n: 0 });
     }
 
     loadAlticci(n: number) {
@@ -45,6 +45,6 @@ export class AppComponent implements OnInit {
 
     numSubmit() {
 
-        this.loadAlticci(this.aobaForm.value.n);
+        this.loadAlticci(this.form.value.n);
     }
 }
