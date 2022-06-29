@@ -1,0 +1,12 @@
+<div class="container">
+    <form [formGroup]="aobaForm" (submit)="numSubmit()">
+        <div class="form-group">
+            <label for="formGroupExampleInput">N: </label>
+            <input type="text" formControlName="n" class="form-control">
+        </div>
+        <div class="form-group">
+            <button>Enviar</button>
+        </div>
+    </form>
+    <p *ngFor="let n of alticci">{{n}}</p>
+</div>
