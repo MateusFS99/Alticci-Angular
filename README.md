@@ -1,5 +1,3 @@
-[![Updated Badge](https://badges.pufler.dev/updated/MateusFS99/Alticci-Angular)](https://github.com/MateusFS99/Alticci-Angular/commits/main)
-
 <h1 align="center">Alticci - Angular Frontend</h1>
 
 ## About 🎯
